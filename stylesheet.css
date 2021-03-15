@@ -1,0 +1,73 @@
+
+            body {
+                height: 100vh;
+                width: 100vw;
+                background-color: #2a3698;
+            }
+            h1 {
+                color: white;
+                text-align: center;
+               font-family: 'Squada One', cursive;
+               font-size: 10rem;
+           }
+            .btn {
+                border:none;
+                border-radius: 5px;
+                display:inline-block;
+                padding:1rem 2rem;
+                vertical-align:middle;
+                overflow:hidden;
+                text-decoration:none;
+                color:inherit;
+                background-color:inherit;
+                text-align:center;
+                cursor:pointer;
+                white-space:nowrap;
+                font: 2rem GyparodyRG, sans-serif;
+            }
+            .btn:hover {
+                box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+            }
+            .white {
+                color:#000!important;
+                background-color:#fff!important;
+            }
+            .main {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            
+/*glowing neon box */
+.border {
+    animation: fromLeft;
+    animation-duration: 5s;
+    background-color: white;
+    border-radius: 25px;
+    margin: auto;
+    width: 70%;
+    height: 60%;
+    /*border: ;*/
+    box-shadow:
+            inset 0 0 50px #fff,      /* inner white */
+            inset 20px 0 80px #f0f,   /* inner left magenta short */
+            inset -20px 0 80px #0ff,  /* inner right cyan short */
+            inset 20px 0 300px #f0f,  /* inner left magenta broad */
+            inset -20px 0 300px #0ff, /* inner right cyan broad */
+            0 0 50px #fff,            /* outer white */
+            -10px 0 80px #f0f,        /* outer left magenta */
+            10px 0 80px #0ff;         /* outer right cyan */
+}
+
+/*rules of the game text box and size*/
+.text  {
+    font-family: arial;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+    
