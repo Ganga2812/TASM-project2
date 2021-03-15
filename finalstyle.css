@@ -1,0 +1,79 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: #061e7d;
+}
+.container {
+  width: 100%;
+  margin-top: 10%;
+  text-align: center;
+  font-weight: bold;
+}
+h1 {
+  font-size: 50pt;
+  color: #ffffee;
+  letter-spacing: 3pt;
+  margin: 15px 0 20px 0;
+  text-align: center;
+}
+h2 {
+  font-size: 18pt;
+  color: white;
+  margin: 0 0 10px 0;
+  text-align: center;
+
+}
+
+.play {
+  display: inline-block;
+  margin: 0 60px;
+  padding: 20px;
+  text-shadow: 4px 4px #000;;
+  color: #ffff00;
+  font-family: Gyparody;
+  font-size: 20pt;
+  border: 5px solid #0000cc;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: #0000ff;
+  letter-spacing: 1pt;
+  margin-top: 10%;
+  margin-left: 21.5%;
+}
+.play:hover {
+  background-color: #111fba;
+}
+
+table {
+ border-collapse: collapse;
+  border-spacing: 0;
+  width: 50%;
+  margin-left: 24%;
+  margin-top: 5%; 
+
+}
+tr:nth-child(odd) {
+  background-color: white;
+}
+tr:nth-child(even) {
+  background-color: blue;
+}
+
+tr, td {
+  padding: 15px;
+}
+
+#mytable{
+	text-align:left;
+}
+h2{
+	text-align:center;
+}
+ul {
+  list-style: none;
+}
+ul li::before {
+  content: "\2022";
+  color:#cb8feb ;
+}
