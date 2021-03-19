@@ -16,7 +16,6 @@
                 <br>
                 <center>Team</center>
                 <ul style="font-size:18px">
-                <li style="color:#10000f">Team</li>
                     <li style="color:#0a000a">Leader: Tanjima</li>
                     <li style="color:#070007">JeoPHardy</li>
                     <li style="color:#030003">This is a recreation of the gameshow Jeopardy! using php and introducing a login feature.</li>
