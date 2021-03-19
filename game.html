@@ -8,25 +8,26 @@
     <title>Document</title>
 </head>
 <body>
+	<?php
+		if(isset($_POST['submit'])){
+			$data = $_POST['submit'];
+		}
+	?>
+
     <h1 class='tite'>Jeopardy!</h1>
-    <div class='main_container'>
+    <form action="game-question.php" method='post'>
         <div class='card_container header'>
-			<div class="card">
-				<div class="front">Yo this is the front
-				</div>
+			<div class="front">Yo this is the front
+			</div>
+		</div>
+
+        <div class='card_container header'>
+			<div class="front">Yo this is the front
 			</div>
 		</div>
         <div class='card_container header'>
-			<div class="card">
-				<div class="front">Yo this is the front
-				</div>
+			<div class="front">Yo this is the front
 			</div>
-		</div>
-        <div class='card_container header'>
-			<div class="card">
-				<div class="front">Yo this is the front
-				</div>
-		</div>
         </div>
         <div class='card_container header'>
 			<div class="card">
@@ -34,102 +35,44 @@
 				</div>
 			</div>
 		</div>
-        <div class='card_container header'>
-			<div class="card">
-				<div class="front">Yo this is the front
-				</div>
-			</div>
+        <div class='card_container'>
+			<button type="submit" value="one_1" name='submit'>$100</button>
 		</div>
         <div class='card_container'>
-			<div class="card">
-				<div class="front">$100
-				</div>
-			</div>
+			<button type="submit" value="one_2" name='submit'>$100</button>
 		</div>
         <div class='card_container'>
-			<div class="card">
-				<div class="front">$100
-				</div>
-			</div>
+			<button type="submit" value="one_3" name='submit'>$100</button>
 		</div>
         <div class='card_container'>
-			<div class="card">
-				<div class="front">$100
-				</div>
-			</div>
+			<button type="submit" value="one_4" name='submit'>$100</button>
+		</div>
+
+        <div class='card_container'>
+			<button type="submit" value="two_1" name='submit'>$200</button>
 		</div>
         <div class='card_container'>
-			<div class="card">
-				<div class="front">$100
-				</div>
-			</div>
+			<button type="submit" value="two_2" name='submit'>$200</button>
 		</div>
         <div class='card_container'>
-			<div class="card">
-				<div class="front">$100
-				</div>
-			</div>
+			<button type="submit" value="two_3" name='submit'>$200</button>
 		</div>
         <div class='card_container'>
-			<div class="card">
-				<div class="front">$200
-				</div>
-			</div>
+			<button type="submit" value="two_4" name='submit'>$200</button>
+		</div>
+
+        <div class='card_container'>
+			<button type="submit" value="three_1" name='submit'>$300</button>
 		</div>
         <div class='card_container'>
-			<div class="card">
-				<div class="front">$200
-				</div>
-			</div>
+			<button type="submit" value="three_2" name='submit'>$300</button>
 		</div>
         <div class='card_container'>
-			<div class="card">
-				<div class="front">$200
-				</div>
-			</div>
+			<button type="submit" value="three_3" name='submit'>$300</button>
 		</div>
         <div class='card_container'>
-			<div class="card">
-				<div class="front">$200
-				</div>
-			</div>
+			<button type="submit" value="three_4" name='submit'>$300</button>
 		</div>
-        <div class='card_container'>
-			<div class="card">
-				<div class="front">$200
-				</div>
-			</div>
-		</div>
-        <div class='card_container'>
-			<div class="card">
-				<div class="front">$300
-				</div>
-			</div>
-		</div>
-        <div class='card_container'>
-			<div class="card">
-				<div class="front">$300
-				</div>
-			</div>
-		</div>
-        <div class='card_container'>
-			<div class="card">
-				<div class="front">$300
-				</div>
-			</div>
-		</div>
-        <div class='card_container'>
-			<div class="card">
-				<div class="front">$300
-				</div>
-			</div>
-		</div>
-        <div class='card_container'>
-			<div class="card">
-				<div class="front">$300
-				</div>
-			</div>
-		</div>
-    </div>
+    </form>
 </body>
 </html>
