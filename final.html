@@ -9,7 +9,13 @@
   <h1> <strong>Thanks for Playing!</strong>&emsp;</h1>
 
 
-<?php if ($leaderboard) { ?>
+
+<?php if ($leaderboard) { 
+
+echo $_COOKIE =["Username"];
+$Username = $_SESSION["Username"];
+
+?>
 
     <div class="leaderboard">
         <?php echo "{$leaderboard['name']} Leaderboard"; ?>
