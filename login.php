@@ -25,7 +25,7 @@
         print_r($accounts);
         if (isset($accounts[$username]) && $accounts[$username] == $password) {
             $_SESSION['Userdata']['Username']=$accounts[$username];
-            $_SESSION['username']=$username; // username
+            $_SESSION['username']=$username;
             header("location:gameboard.php");
             exit;
         } else {
