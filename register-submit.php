@@ -45,11 +45,11 @@ if (!$error && !$exists) {
         <div class="main">
         <?php if ($error) { ?>
             <h1>Error!</h1>
-            <p>We're sorry. You've left some fields empty. Please try again.</p><br>
+            <p>Sorry, you've left a field empty. Try again.</p><br>
             <a href="register.php">back</a>
         <?php } else if ($exists) { ?>
             <h1>Error!</h1>
-            <p>We're sorry. The username you have chosen already exists. Please try again.</p>
+            <p>Sorry, your username is taken. Try again.</p><br>
             <a href="register.php">back</a>
         <?php } else { ?>
             <h1>Welcome, <?= $username ?>!</h1>
