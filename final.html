@@ -7,15 +7,52 @@
 <body>
 
   <h1> <strong>Thanks for Playing!</strong>&emsp;</h1>
-  <h2> Leaderboard</h2>
 
 
+<?php if ($leaderboard) { ?>
+
+    <div class="leaderboard">
+        <?php echo "{$leaderboard['name']} Leaderboard"; ?>
+    </div>
+ 
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Score</th>
+        </tr>
+        </thead>
+        <tbody>
+    <?php
+        {
+           
+            <tr>
+                <td colspan="2"><center>No scores available at this time.</center></td>
+            </tr>
+
+            <?php
+        } else {
+            while ($score = $scores) {
+            
+                    <td><?php echo $rank; ?></td>
+                    <td>
+                        <b><?php echo $score['username']; ?></b>
+                    </td>
+                    <td><?php echo $score['score']; ?></td>
+                </tr>
+                <?php
+            }
+        }
+        ?>
 	
 
     <a class="play" href="game.html">Play Again</a>
     <a class="play" href="register-submit.php">New User</a>
   </div>
+ <h2> Leaderboard</h2>
 
 </body>
 </html>
+
+
 
