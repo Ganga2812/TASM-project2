@@ -10,34 +10,10 @@
   <h2> Leaderboard</h2>
 
 
-<?php
-include 'bbb.php'
-echo $_COOKIE['Username'];
-
-if(isset($_POST['']))
-{
-    $Username = $_POST['name'];
-    $score = $_POST['score'];
-
-   }
-if ($result->$num_rows > 0) {
-        <table style='width:50%' border='1'>
-        <tr>
-        <th>Name</th>
-        <th>Points</th>
-        </tr>;
-
- while($row = $result) {
-             <tr>;
-             <td> 'name' </td>  <td> 'score'  </td>;
-             </tr>;
-        }
-          </table>;
-?>
 	
 
-    <a class="play" href="">Play Again</a>
-    <a class="play" href="">New User</a>
+    <a class="play" href="game.html">Play Again</a>
+    <a class="play" href="register-submit.php">New User</a>
   </div>
 
 </body>
