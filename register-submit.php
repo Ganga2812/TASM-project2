@@ -52,7 +52,7 @@ if (!$error && !$exists) {
             <p>Sorry, your username is taken. Try again.</p><br>
             <a href="register.php">back</a>
         <?php } else { ?>
-            <h1>Welcome, <?= $username ?>!</h1>
+            <h1>Let's play, <?= $username ?>!</h1>
             <a href="index.php">continue</a>
         <?php } ?>
         </div>
