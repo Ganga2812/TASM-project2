@@ -22,7 +22,6 @@
             $v = rtrim($tempv);
             $accounts[$k] = $v;
         }
-        print_r($accounts);
         if (isset($accounts[$username]) && $accounts[$username] == $password) {
             $_SESSION['Userdata']['Username']=$accounts[$username];
             $_SESSION['username']=$username;
