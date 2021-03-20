@@ -57,7 +57,7 @@
                     <input class="check" type="checkbox" name="check" checked>
                     <label for="check">Remember Me</label>
                     <input class="form-input" type="submit" name="Submit" value="LOGIN">
-                    <p>Not registered? <a href="register.php">Create an account</a></p>
+                    <p>Register here <a href="register.php">Create an account</a></p>
                 </form>
             </div>
         </div>
