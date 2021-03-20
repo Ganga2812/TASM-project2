@@ -2,16 +2,16 @@
 
     if(isset($_POST['Submit'])) {
         $accounts = array('admin' => 'admin');
-        $Username = isset($_POST['Username']) ? $_POST['Username'] : '';
-        $Password = isset($_POST['Password']) ? $_POST['Password'] : '';
+        $username = isset($_POST['username']) ? $_POST['username'] : '';
+        $password = isset($_POST['password']) ? $_POST['password'] : '';
         $error = "username/password incorrect";
 
         if(isset($_POST['check'])) {
-            setcookie('Username', $Username, time()+(86400*30));
-            setcookie('Password', $Password, time()+(86400*30));
+            setcookie('username', $username, time()+(86400*30));
+            setcookie('password', $password, time()+(86400*30));
         } else {
-            setcookie('Username', $Username, time()-1);
-            setcookie('Password', $Password, time()-1);
+            setcookie('username', $username, time()-1);
+            setcookie('password', $password, time()-1);
         }
 
         $file = file("accounts.txt");
@@ -23,9 +23,9 @@
             $accounts[$k] = $v;
         }
         print_r($accounts);
-        if (isset($accounts[$Username]) && $accounts[$Username] == $Password) {
-            $_SESSION['Userdata']['Username']=$accounts[$Username];
-            $_SESSION['Username']=$Username; // username
+        if (isset($accounts[$username]) && $accounts[$username] == $password) {
+            $_SESSION['Userdata']['Username']=$accounts[$username];
+            $_SESSION['username']=$username; // username
             header("location:gameboard.php");
             exit;
         } else {
@@ -52,8 +52,8 @@
             <div class="form">
                 <form action="" method="post" class="login-form">
                     <h1>Login</h1>
-                    <input class="form-input" type="text" name="Username" placeholder="username" value="<?php echo @$_COOKIE['Username']; ?>">
-                    <input class="form-input" type="password" name="Password" placeholder="password" value="<?php echo @$_COOKIE['Password']; ?>">
+                    <input class="form-input" type="text" name="username" placeholder="username" value="<?php echo @$_COOKIE['username']; ?>">
+                    <input class="form-input" type="password" name="Password" placeholder="password" value="<?php echo @$_COOKIE['password']; ?>">
                     <input class="check" type="checkbox" name="check" checked>
                     <label for="check">Remember Me</label>
                     <input class="form-input" type="submit" name="Submit" value="LOGIN">
