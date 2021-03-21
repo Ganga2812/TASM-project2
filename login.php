@@ -9,9 +9,13 @@
         if(isset($_POST['check'])) {
             setcookie('Username', $Username, time()+(86400*30));
             setcookie('Password', $Password, time()+(86400*30));
+            setcookie('score', 0, time()+(86400*30));
+            setcookie('count', 0, time()+(86400*30));
         } else {
             setcookie('Username', $Username, time()-1);
             setcookie('Password', $Password, time()-1);
+            setcookie('score', 0, time()-1);
+            setcookie('count', 0, time()-1);
         }
 
         $file = file("accounts.txt");
@@ -26,7 +30,7 @@
         if (isset($accounts[$Username]) && $accounts[$Username] == $Password) {
             $_SESSION['Userdata']['Username']=$accounts[$Username];
             $_SESSION['Username']=$Username; // username
-            header("location:gameboard.php");
+            header("location:game.html");
             exit;
         } else {
                 $_SESSION["error"] = $error;
