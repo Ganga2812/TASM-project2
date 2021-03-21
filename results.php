@@ -3,10 +3,16 @@
     $game_question = $_POST['user_code'];
     $game_answer = strtolower($answers[$game_question]);
     $user_answer = strtolower($_POST['uanswer']);
-    $score = $_COOKIE["score"];
-    $count = $_COOKIE["count"];
-    setcookie('count', $count + 1);
-    setcookie('$game_question', true);
+    if(isset($_COOKIE["score"])){
+        $score = $_COOKIE["score"];
+    }
+
+    if(isset($_COOKIE["count"])){
+        $count = $_COOKIE["count"];
+        setcookie('count', $count + 1);
+    }
+
+    setcookie($game_question, true);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +40,7 @@
         <p>Well Done! You got it right!</p>
         <label>Current Money $<?= $score?></label>
         <br>
-        <a href="./game.html">Back to questions</a>
+        <a href="./game.php"><button type="button">back</button></a>
     </div>
 <?php
      } else {
@@ -43,14 +49,14 @@
         <p>Unlucky! Your answer was not correct</p>
         <label>Current Money $<?= $score?></label>
         <br>
-        <a href="./game.html">back</a>
+        <a href="./game.php"><button type="button">back</button></a>
     <?php
         }
     ?>
     <?php
             if($_COOKIE['count'] == 11) {
         ?>
-        <a href="./final.html">Exit Game</a>
+        <a href="./final.html"><button type="button">Exit Game</button></a>
         <?php
             }
         ?>

@@ -43,3 +43,23 @@ button{
 }
 
 
+button {    
+	transition: transform .2s; /* Animation */
+}
+  
+button:hover {
+    z-index: 1;
+	transform: scale(1.5); /* (150% zoom) */
+}
+
+.score{
+	padding-left: 10px;
+	padding-right: 10px;
+	position: fixed;
+	left: 20px;
+	top: 110px;
+  	background-color: green;
+  	width: 150px;
+  	height: 80px;
+  	margin: 5;
+}

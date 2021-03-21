@@ -1,6 +1,6 @@
 <?php
     // Game questions and answers
-    
+
     $questions = [
         "one_1"  => "It occupies about half the land mass of the South American continent",
         "one_2" => "The mafic type of this 5-letter underground molten rock can reach more than 2000 degrees Fahrenheit",
@@ -30,4 +30,6 @@
         "three_3" => "Iota",
         "three_4" => "Indianapolis"
     ];
+
+    
 ?>

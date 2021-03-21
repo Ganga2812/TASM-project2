@@ -15,6 +15,11 @@
 	?>
 
     <h1 class='tite'>Jeopardy!</h1>
+	<div class='score'>
+		<h4>Current Score: $<?= $_COOKIE['score']; ?></h4>
+		<a href='final.html'><button type="button">Quit Game</button></a>
+	</div>
+
     <form action="game-question.php" method='post'>
         <div class='card_container header'>
 			<div class="front">6-letter countries
@@ -30,9 +35,7 @@
 			</div>
         </div>
         <div class='card_container header'>
-			<div class="card">
-				<div class="front">Midwest Cities
-				</div>
+			<div class="front">Midwest Cities
 			</div>
 		</div>
         <div class='card_container'>
