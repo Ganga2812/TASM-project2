@@ -17,7 +17,7 @@
     <h1 class='tite'>Jeopardy!</h1>
 	<div class='score'>
 		<h4>Current Score: $<?= $_COOKIE['score']; ?></h4>
-		<a href='final.html'><button type="button">Quit Game</button></a>
+		<a href='final.php'><button type="button" class=quit>Quit Game</button></a>
 	</div>
 
     <form action="game-question.php" method='post'>

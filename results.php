@@ -56,7 +56,7 @@
     <?php
             if($_COOKIE['count'] == 11) {
         ?>
-        <a href="./final.html"><button type="button">Exit Game</button></a>
+        <a href="./final.php"><button type="button">Exit Game</button></a>
         <?php
             }
         ?>
