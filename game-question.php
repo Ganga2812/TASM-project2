@@ -50,6 +50,7 @@ body{
 
 h2{
 	font-family: Impact;
+	color:white;
 }
 	
 
