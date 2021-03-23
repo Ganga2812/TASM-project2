@@ -37,7 +37,7 @@
          }
 ?>
     <div>
-        <p>Well Done! You got it right!</p>
+        <h1>Well Done! You got it right!</h1>
         <label>Current Money $<?= $score?></label>
         <br>
         <a href="./game.php"><button type="button">back</button></a>
@@ -46,7 +46,7 @@
      } else {
 ?>
     <div>
-        <p>Unlucky! Your answer was not correct</p>
+        <h1>Unlucky! Your answer was not correct</h1>
         <label>Current Money $<?= $score?></label>
         <br>
         <a href="./game.php"><button type="button">back</button></a>
