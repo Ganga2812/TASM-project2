@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    <title>Document</title>
+    <title>Jeopardy</title>
 </head>
 <body>
 	<?php
@@ -14,10 +14,13 @@
 		}
 	?>
 
-    <h1 class='tite'>Jeopardy!</h1>
+    
 	<div class='score'>
 		<h4>Current Score: $<?= $_COOKIE['score']; ?></h4>
-		<a href='final.php'><button type="button" class=quit>Quit Game</button></a>
+	</div>
+
+	<div class='quit'>
+	<a href='final.php'><button type="button2" class=quit>Quit Game</button></a>	
 	</div>
 
     <form action="game-question.php" method='post'>
