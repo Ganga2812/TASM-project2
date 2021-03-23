@@ -10,16 +10,15 @@
     <body>
         <div class="main">
             <h1>JEOPARDY!</h1>
-
         <div class="border">
             <div class="text">
                 <br>
                 <center>Team</center>
                 <ul style="font-size:18px">
-                    <li style="color:#0a000a">Leader: Tanjima</li>
-                    <li style="color:#070007">JeoPHardy</li>
-                    <li style="color:#030003">This is a recreation of the gameshow Jeopardy! using php and introducing a login feature.</li>
-                    <li style="color:#050005">Mia Stroud (Intro/login), Saadh Ahmed/Anish Ganga (game screen), Tanjina (end page/youtube)</li>
+                    <li >Leader: Tanjima</li>
+                    <li >JeoPHardy</li>
+                    <li >This is a recreation of the gameshow Jeopardy! using php and introducing a login feature.</li>
+                    <li>Mia Stroud (Intro/login), Saadh Ahmed/Anish Ganga (game screen), Tanjina (end page/youtube)</li>
                 </ul>
 
             </div>
