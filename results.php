@@ -71,10 +71,16 @@ body{
 	margin-top: 200px;
 }
 
-h2{
+h1{
 	font-family: Impact;
+	color: white;
 }
-	
+
+label{
+	font-family: Impact;
+	color: white;
+	font-size: 30px;
+}
 
 button{
 	background-color: black;
