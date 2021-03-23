@@ -1,5 +1,5 @@
-<?php
 
+<?php
 $username = $_POST["username"];
 $password = $_POST["password"];
 $filename = 'accounts.txt';
@@ -44,15 +44,15 @@ if (!$error && !$exists) {
     <body>
         <div class="main">
         <?php if ($error) { ?>
-            <h1>Error!</h1>
-            <p>Sorry, you've left a field empty. Try again.</p><br>
+            <h1>Oops!</h1>
+            <p class="error">Sorry, you've left a field empty. Try again.</p><br>
             <a href="register.php">back</a>
         <?php } else if ($exists) { ?>
-            <h1>Error!</h1>
-            <p>Sorry, your username is taken. Try again.</p><br>
+            <h1>Yikes!</h1>
+            <p class="error">Sorry, your username is taken. Try again.</p>
             <a href="register.php">back</a>
         <?php } else { ?>
-            <h1>Let's play, <?= $username ?>!</h1>
+            <h1>Welcome, <?= $username ?>!</h1>
             <a href="index.php">continue</a>
         <?php } ?>
         </div>
