@@ -1,142 +1,81 @@
- body {
-                height: 100vh;
-                width: 100vw;
-                background-color: #2a3698;
-            }
-            h1 {
-                color: white;
-                text-align: center;
-               font-family: 'Squada One', cursive;
-               font-size: 10rem;
-           }
-    
-            .btn {
-                border:none;
-                 font-family: 'Squada One', cursive;
-                  font-size: 2rem;
-                border-radius: 5px;
-                display:inline-block;
-                padding:1rem 2rem;
-                vertical-align:middle;
-                overflow:hidden;
-                text-decoration:none;
-                color:inherit;
-                background-color:inherit;
-                text-align:center;
-                cursor:pointer;
-                white-space:nowrap;
-                font: 2rem , sans-serif;
-            }
-            .btn:hover {
-                box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-            }
-            .white {
-                color:#000!important;
-                background-color:#fff!important;
-            }
-            .main {
-                margin: 0;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                -ms-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-                text-align: center;
-            }
-            
-        .border {
-            animation: fromLeft;
-            animation-duration: 5s;
-            background-color: white;
-            border-radius: 25px;
-            margin: auto;
-            width: 70%;
-            height: 60%;
-            /*border: ;*/
-            box-shadow:
-                    inset 0 0 50px #fff,      
-                    inset 20px 0 80px #f0f,   
-                    inset -20px 0 80px #0ff, 
-                    inset 20px 0 300px #f0f, 
-                    inset -20px 0 300px #0ff, 
-                    0 0 50px #fff,            
-                    -10px 0 80px #f0f,        
-                    10px 0 80px #0ff;         
-        }
-        
-        .text  {
-            font-family: arial;
-            margin: auto;
-            text-align: center;
-            width: 80%;
-        }
-            
-         body {
-             height: 100vh;
-              width: 100vw;
-            background-color: #2a3698;
-        }
-         h1 {
-                color: white;
-                text-align: center;
-            }
-            .main {
-                margin: 0;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                -ms-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-                text-align: center;
-            }
-            .form {
-                position: relative;
-                background: #FFFFFF;
-                margin: 0 auto;
-                padding: 3rem;
-                text-align: center;
-                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-            }
-            .form-input {
-                font: 0.8rem Oswald, sans-serif;
-                outline: 0;
-                background: #f2f2f2;
-                width: 100%;
-                border: 0;
-                margin: 0 0 1rem;
-                padding: 1rem;
-                box-sizing: border-box;
-            }
-            .form-input[type="submit"] {
-                text-transform: uppercase;
-                background: #1155CC;
-                color: white;
-                cursor: pointer;
-            }
-            .form-input[type="submit"]:hover {
-                background: #0d419d;
-            }
-            .form h1 {
-                font: 3rem Oswald, sans-serif;
-                color: #1155cc;
-            }
-            .form p {
-                font: 0.75rem "Roboto Light", sans-serif;
-                margin: 0.5rem 0 0;
-            }
-            .check {
-                float: left;
-                margin-right: 0.5rem;
-                margin-bottom: 1rem;
-            }
-            .form label {
-                float: left;
-                font: 0.75rem "Roboto Light", sans-serif;
-                padding-top: 0.2rem;
-            }
-            .error{
-                color: white;
-                text-align: center;
-               font-size: 2rem;
-            }
+html,body{
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: navy;
+}
+.container {
+  width: 100%;
+  margin-top: 10%;
+  text-align: center;
+  font-weight: bold;
+}
+h1 {
+  font-size: 70px;
+  font-weight: bold;
+  font-family: Impact;
+  color: #ffffee;
+  letter-spacing: 3pt;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  margin-right: 150px;
+  margin-left: 155px;
+  text-align: center;
+}
+h2 {
+  font-weight: bold;
+  font-family: Impact;
+  font-size: 25pt;
+  color: white;
+  margin: 0 0 10px 0;
+  text-align: center;
+
+}
+
+button{
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Impact;
+  margin: 60px;
+  padding: 20px;
+  color: goldenrod;
+  background-color: black;
+  letter-spacing: 1pt;
+  margin-top: 100px;
+  margin-left: 23%;
+}
+
+table {
+ border-collapse: collapse;
+  border-spacing: 0;
+  width: 50%;
+  margin-left: 24%;
+  margin-top: 5%; 
+
+}
+tr:nth-child(odd) {
+  background-color: white;
+}
+tr:nth-child(even) {
+  background-color: blue;
+}
+
+tr, td {
+  padding: 15px;
+}
+
+#mytable{
+	text-align:left;
+}
+h2{
+	text-align:center;
+}
+ul {
+  list-style: none;
+}
+ul li::before {
+  content: "\2022";
+  color:#cb8feb ;
+}
     
