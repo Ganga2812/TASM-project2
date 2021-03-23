@@ -46,6 +46,9 @@ body{
 	background-color: navy;
 	margin-left: 5px;
 	margin-top: 200px;
+	color:white;
+	font-family: impact;
+	font-size: 20px;
 }
 
 h2{
