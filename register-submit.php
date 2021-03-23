@@ -8,8 +8,8 @@ $users = [];
 
 for ($i = 0; $i < count($file); $i++) {
     $temp = explode(",", $file[$i]);
-    $k = $temp[0];
-    $users[$i] = $k;
+    $temp2 = $temp[0];
+    $users[$i] = $temp2;
 }
 
 $error = false;
@@ -19,8 +19,8 @@ if (empty($username) || empty($password)) {
     $error = true;
 }
 
-foreach ($users as $u) {
-    if ($u == $username) {
+foreach ($users as $user) {
+    if ($user == $username) {
         $exists = true;
     }
 }
