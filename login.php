@@ -27,10 +27,10 @@
         $file = file("accounts.txt");
         for ($i = 0; $i < count($file); $i++) {
             $temp = explode(",", $file[$i]);
-            $k = $temp[0];
+            $tempk = $temp[0];
             $tempv = $temp[1];
-            $v = rtrim($tempv);
-            $accounts[$k] = $v;
+            $temp3 = rtrim($tempv);
+            $accounts[$tempk] = $temp3;
         }
         if (isset($accounts[$username]) && $accounts[$username] == $password) {
             $_SESSION['Userdata']['Username']=$accounts[$username];
