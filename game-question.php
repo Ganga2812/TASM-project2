@@ -38,39 +38,5 @@
         <a href='game.php'><button type="button">Go Back</button></a>
     <?php endif; ?>
 </body> 
-
-<style>
-
-body{
-	text-align: center;
-	background-color: navy;
-	margin-left: 5px;
-	margin-top: 200px;
-	color:white;
-	font-family: impact;
-	font-size: 20px;
-}
-
-h2{
-	font-family: Impact;
-	color:white;
-}
-	
-
-button{
-	background-color: black;
-	font-size: 30px;
-	font-weight: bold;
-	font-family: Impact;
-	color: goldenrod;
-	position: center;
-	width: 15%;
-	height: 20%;
-	text-align: center;
-	
-
-}
-
-</style>
         
 </html>
