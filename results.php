@@ -62,39 +62,5 @@
         ?>
     </div>
 </body>
-    <style>
 
-body{
-	text-align: center;
-	background-color: navy;
-	margin-left: 5px;
-	margin-top: 200px;
-}
-
-h1{
-	font-family: Impact;
-	color: white;
-}
-
-label{
-	font-family: Impact;
-	color: white;
-	font-size: 30px;
-}
-
-button{
-	background-color: black;
-	font-size: 30px;
-	font-weight: bold;
-	font-family: Impact;
-	color: goldenrod;
-	position: center;
-	width: 15%;
-	height: 20%;
-	text-align: center;
-	
-
-}
-
-</style>
 </html>
